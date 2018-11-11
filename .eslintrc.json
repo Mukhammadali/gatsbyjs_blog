@@ -1,0 +1,49 @@
+{
+    "extends": [
+        "airbnb-base",
+        "prettier",
+        "prettier/react",
+        "plugin:react/recommended",
+        "eslint:recommended"
+    ],
+    "plugins": [
+      "import",
+      "react",
+      "prettier"
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "strict":"off",
+      "camelcase":"off",
+      "react/prop-types":"warn",
+      "react/react-in-jsx-scope":"off",
+      "no-console":"warn",
+      "no-tabs": 0,
+      "prefer-const": 1,
+      "no-unused-vars": ["warn", { "argsIgnorePattern": "props" }],
+      "prefer-destructuring":["error",{"array":false,"object":true}],
+      "react/no-typos": 1,
+      "quotes": [2, "single", "avoid-escape"],
+      "eqeqeq": 1,
+      "jsx-a11y/href-no-hash": "off",
+      "react/forbid-prop-types": "off",
+      "import/no-extraneous-dependencies": "off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "prettier/prettier": "error",
+      "import/prefer-default-export":"off",
+      "no-underscore-dangle":"off",
+      "react/display-name":"off"
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+    }
+}

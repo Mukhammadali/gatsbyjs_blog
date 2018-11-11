@@ -1,0 +1,37 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "description": "A blog built using GatsbyJS",
+  "license": "MIT",
+  "author": "Mukhammad Ali",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "lint:quiet": "eslint --quiet src/** --env browser --ext .jsx,.js ",
+    "lint": "eslint src/** --env browser --ext .jsx,.js",
+    "lint:fix": "eslint src/** --ext .jsx,.js --env browser --fix"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.33",
+    "grommet": "^2.0.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-responsive-modal": "^3.5.0",
+    "recompose": "^0.30.0",
+    "shortid": "^2.2.14",
+    "styled-components": "^4.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "1.15.2"
+  }
+}
