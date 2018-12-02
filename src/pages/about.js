@@ -8,5 +8,3 @@ const Page = () => (
 );
 
 export default Page;
-
-const cool = styled.div``;
