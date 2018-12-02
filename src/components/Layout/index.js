@@ -13,8 +13,8 @@ const Layout = props => (
 export default Layout;
 
 const Container = styled.div`
-  width: 1252px;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 `;

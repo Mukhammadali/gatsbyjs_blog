@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../Layout';
+import Layout from 'src/components/Layout';
 
 const Page = () => (
   <Layout>
@@ -8,3 +8,5 @@ const Page = () => (
 );
 
 export default Page;
+
+const cool = styled.div``;

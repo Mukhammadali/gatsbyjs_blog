@@ -1,12 +1,12 @@
 import React from 'react';
-import { Icon } from '../components';
-import Layout from '../Layout';
+import { Icon } from 'src/elements';
+import Layout from 'src/components/Layout';
 
 const Page = () => (
   <Layout>
     <h3>Home Page</h3>
     <img src="https://source.unsplash.com/random/400x200" alt="" />
-    <Icon name="search" />
+    <Icon icon="ios-search" />
   </Layout>
 );
 

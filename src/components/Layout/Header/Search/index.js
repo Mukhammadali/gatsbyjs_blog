@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ResponsiveModal from 'react-responsive-modal';
-import { Icon } from '../../../components';
+import { Icon } from 'src/elements';
 
 const styles = {
   modal: {
@@ -27,14 +27,14 @@ const Search = props => {
       onClose={() => toggleModalVisible(false)}
       styles={styles}
       animationduration={1000}
-      focusTrapped={true}
+      focusTrsrced={true}
       closeIconSize={40}
       showCloseIcon={false}
     >
       <SearchInput>
         <Input placeholder="Search..." />
         <a>
-          <Icon name="search" color="#828387" />
+          <Icon icon="ios-search" color="#828387" />
         </a>
       </SearchInput>
       <ExtraInfo>Click ESC or click outside input.</ExtraInfo>

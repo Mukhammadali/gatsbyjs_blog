@@ -2,16 +2,16 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { compose, withState } from 'recompose';
 import styled from 'styled-components';
+import { Icon } from 'src/elements';
 import menu from './menu.json';
-import { Icon } from '../../components';
-import theme from '../../lib/theme';
+import theme from '../../../lib/theme';
 import Search from './Search';
 
 const Header = props => {
   const { modalVisible, toggleModalVisible } = props;
   return (
-    <Navbar>
-      <Container>
+    <Container>
+      <Navbar>
         <Link to="/">
           <Logo>MNews</Logo>
         </Link>
@@ -28,15 +28,15 @@ const Header = props => {
             ))}
           </Menu>
           <SearchBtn onClick={() => toggleModalVisible(true)}>
-            <Icon name="search" size={27} />
+            <Icon icon="ios-search" fontSize={27} />
           </SearchBtn>
           <Search
             modalVisible={modalVisible}
             toggleModalVisible={toggleModalVisible}
           />
         </RightContainer>
-      </Container>
-    </Navbar>
+      </Navbar>
+    </Container>
   );
 };
 
@@ -47,7 +47,9 @@ export default compose(withState('modalVisible', 'toggleModalVisible', false))(
 const Navbar = styled.div`
   display: flex;
   width: 100%;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 const Logo = styled.div`
@@ -65,10 +67,9 @@ const Logo = styled.div`
 const Container = styled.div`
   display: flex;
   flex: 1;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  min-height: 90px;
+  width: 1252px;
+  height: 90px;
+  justify-content: center;
 `;
 
 const SearchBtn = styled.a`

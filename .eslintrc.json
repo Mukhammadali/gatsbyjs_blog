@@ -45,5 +45,13 @@
       "ecmaFeatures": {
           "jsx": true
       }
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["."],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
     }
 }
