@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { compose, withState } from 'recompose';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { Icon } from 'src/elements';
 import menu from './menu.json';
 import theme from '../../../lib/theme';
@@ -40,6 +41,11 @@ const Header = props => {
   );
 };
 
+Header.propTypes = {
+  toggleModalVisible: PropTypes.func.isRequired,
+  modalVisible: PropTypes.bool.isRequired
+};
+
 export default compose(withState('modalVisible', 'toggleModalVisible', false))(
   Header
 );
@@ -60,7 +66,7 @@ const Logo = styled.div`
   max-width: 100%;
   margin-right: 1.5rem;
   align-items: center;
-  color: ${theme.colors.accent}
+  color: ${theme.colors.accent};
   flex-wrap: wrap;
 `;
 

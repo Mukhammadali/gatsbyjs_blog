@@ -1,13 +1,8 @@
 import React from 'react';
-import { Icon } from 'src/elements';
-import Layout from 'src/components/Layout';
+import Home from 'src/views/Home';
 
-const Page = () => (
-  <Layout>
-    <h3>Home Page</h3>
-    <img src="https://source.unsplash.com/random/400x200" alt="" />
-    <Icon icon="ios-search" />
-  </Layout>
-);
+console.log('Home', Home);
+
+const Page = () => <Home />;
 
 export default Page;

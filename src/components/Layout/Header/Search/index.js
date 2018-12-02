@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import ResponsiveModal from 'react-responsive-modal';
 import { Icon } from 'src/elements';
 
@@ -40,6 +41,11 @@ const Search = props => {
       <ExtraInfo>Click ESC or click outside input.</ExtraInfo>
     </ResponsiveModal>
   );
+};
+
+Search.propTypes = {
+  toggleModalVisible: PropTypes.func.isRequired,
+  modalVisible: PropTypes.bool.isRequired
 };
 
 export default Search;

@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   plugins: [
@@ -7,6 +7,13 @@ module.exports = {
       options: {
         src: path.join(__dirname, 'src')
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/lib/utils/typography.js'
+      }
+    },
+    'gatsby-plugin-offline'
   ]
-}
+};

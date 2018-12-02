@@ -3,6 +3,5 @@ public/*
 node_modules/*
 ./node_modules/*
 .env
-gatsby-config.js
 gatsby-node.js
 jsconfig.json
