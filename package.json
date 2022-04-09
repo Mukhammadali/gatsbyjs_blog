@@ -18,7 +18,7 @@
     "gatsby-plugin-typography": "^2.2.2",
     "grommet": "^2.0.1",
     "lodash": "^4.17.13",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-ionicons": "^2.1.6",
